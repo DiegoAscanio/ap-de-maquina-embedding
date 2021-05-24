@@ -34,10 +34,10 @@ def get_embedding(str_dataset:str,embedding_size:int=100,overwrite=False):
                         continue
 
                     #obtem a palavra
-                    word = None
+                    word = ' '.join(arr_line[0:-embedding_size])
 
                     #obtem o embedding
-                    dict_embedding[word] = np.array(None, dtype=np.float16)
+                    dict_embedding[word] = np.array(arr_line[-embedding_size:], dtype=np.float16)
                     if(i%10000 == 0):
                         print(f"{i}: {word}")
             except ValueError:
