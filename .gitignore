@@ -4,5 +4,6 @@ embeddings.txt
 *.npz
 *.idx
 .ipynb_checkpoints
-embeddings_data/glove_s100.zip
-embeddings_data/glove.pt.100.txt
+*.p
+embeddings_data/*
+assignment_cache/*
