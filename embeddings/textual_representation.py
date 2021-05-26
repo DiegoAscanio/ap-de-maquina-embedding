@@ -5,9 +5,6 @@ import numpy as np
 from base_am.preprocessamento_atributos import PreprocessDataset
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-
-
-
 class InstanceWisePreprocess(PreprocessDataset):
     def __init__(self, nome, counter_function,text_col="text"):
         super().__init__(nome)
